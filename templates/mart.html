@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>covert a string into a date object</h1>
+<h1 id="demo"style.backgrounds="red"></h1>
+<script>
+     text='{"name":"aslam","city":"kalamassery","birth":"2000-1-28"}'
+     obj=JSON.parse(text)
+     obj.birth=new Date(obj.birth)
+     document.getElementById('demo').innerHTML=obj.name+','+obj.city+", "+obj.birth
+</script>
+</body>
+</html>

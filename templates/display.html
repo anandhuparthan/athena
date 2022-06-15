@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>display</title>
+</head>
+<body>
+<p id="1"></p>
+<button onclick="dis()">click</button>
+<script>
+    function dis()
+    {
+        let txt;
+        if(confirm("Press any button"))
+        {
+            txt="You pressed ok"
+        }
+        else
+        {
+            txt="You pressed cancel"
+        }
+        document.getElementById("1").innerHTML=txt
+    }
+</script>
+</body>
+</html>

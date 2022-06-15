@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jdate</title>
+</head>
+<body>
+<p id="1"></p>
+<script>
+    text='{"name":" anandhu ","age":"function() {return 22;}"}'
+    obj=JSON.parse(text)
+    obj.age=eval("("+ obj.age +")")
+    document.getElementById("1").innerHTML= obj.name +"," +obj.age()
+</script>
+</body>
+</html>

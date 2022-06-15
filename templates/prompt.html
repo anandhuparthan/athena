@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>prompt</title>
+</head>
+<body>
+<button onclick="dis()">click</button>
+<p id="1"></p>
+<script>
+    function dis()
+    {
+     var mess;
+     var text=prompt("Enter you name:")
+        if(text==null || text=="")
+        {
+            mess="Please enter a name."
+        }
+        else
+        {
+            mess="Hello "+text+", How are you?"
+        }
+        document.getElementById("1").innerHTML=mess
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>j1</title>
+</head>
+<body>
+<script>
+    var data=getJson()
+    console.log(data)
+    var convJson = JSON.parse(data)
+    console.log(convJson)
+    var convStr=JSON.stringify(convJson)
+    console.log(convStr)
+    function getJson(){
+    var json=[{"name":"apple","colour":"red","num":12,"fruit":"True","veg":"False"},{"name":"carrot","colour":"orange","num":15,"fruit":"False","veg":"True"}]
+    return JSON.stringify(json)
+    }
+</script>
+</body>+
+</html>
